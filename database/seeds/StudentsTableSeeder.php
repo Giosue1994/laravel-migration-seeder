@@ -15,7 +15,7 @@ class StudentsTableSeeder extends Seeder
     {
         for ($i=0; $i < 10; $i++) {
           $new_student = new Student();
-          $new_student->name = $faker->name;
+          $new_student->name = $faker->firstName;
           $new_student->lastname = $faker->lastName;
           $new_student->age = $faker->numberBetween(18, 50);
           $new_student->vote = $faker->numberBetween(0, 10);
