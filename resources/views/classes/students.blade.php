@@ -4,9 +4,8 @@
   @foreach ($students as $student)
     <li><b>Nome: {{ $student->name }}</b></li>
     <li><b>Cognome: {{ $student->lastname }}</b></li>
-    <li>Anni: {{ $student->age }}</li>
-    <li>Voto: {{ $student->vote }}</li>
-    <li>Note: {{ $student->note }}</li>
-    <br>
+
+    <p><a href="{{ route('students.show', $student) }}">Mostra dettagli</a></p>
+    <hr>
   @endforeach
 </ul>
